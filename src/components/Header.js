@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom"
-import { goToHomePage, goToProfilePage} from "../Router/coordinator"
+import { goToHomePage, goToProfilePage, goToLoginPage } from "../Router/coordinator"
 
 
 function Header() {
@@ -11,6 +11,9 @@ function Header() {
       </button>
       <button onClick={() => goToProfilePage(navigate, 'Carlos')} >
         Ir para página de perfil
+      </button>
+      <button onClick={() => goToLoginPage(navigate)} >
+        Ir para página de login
       </button>
     </header>
   );
